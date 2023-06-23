@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit Converter</title>
+</head>
+<body>
+  <h1>Unit Converter</h1>
+
+  <label for="length">Length (meter to kilometer):</label>
+  <input type="number" id="length" step="any" onchange="convertLength()" /><br></br>
+
+  <label for="temperature">Temperature (celsius to kelvin):</label>
+  <input type="number" id="temperature" step="any" onchange="convertTemperature()" /><br></br>
+
+  <label for="area">Area (square meter to square kilometer):</label>
+  <input type="number" id="area" step="any" onchange="convertArea()" /><br></br>
+
+  <label for="volume">Volume (cubic meter to cubic kilometer):</label>
+  <input type="number" id="volume" step="any" onchange="convertVolume()" /><br></br>
+
+  <label for="weight">Weight (kilogram to gram):</label>
+  <input type="number" id="weight" step="any" onchange="convertWeight()" /><br></br>
+
+  <label for="time">Time (seconds to milliseconds):</label>
+  <input type="number" id="time" step="any" onchange="convertTime()" /><br></br>
+
+  <h2>Results:</h2>
+  <div id="result"></div>
+
+  <script src="converter.js"></script>
+</body>
+</html>
